@@ -1,0 +1,47 @@
+footer {
+    height: 158px;
+    background: #fff;
+    padding-top: 30px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .footer-links {
+    display: flex;
+    gap: 100px;
+}
+
+footer .footer-socials {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    color: #1D537C;
+}
+
+footer .footer-socials i {
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer .footer-socials i:active,
+footer ul a:active {
+    scale: 0.9;
+    color: orange;
+}
+
+footer ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+footer ul a {
+    transition: .5s;
+}
+
+footer span {
+    font-size: 14px;
+}

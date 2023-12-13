@@ -1,0 +1,137 @@
+.home .hero {
+    height: 1065px;
+    background-image: url(/images/navbar-header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 330px;
+    padding-left: 210px;
+}
+
+.home .container h1 {
+    width: 800px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 60px;
+}
+
+.home .container h1>span {
+    color: #FF9D00;
+}
+
+/* MAIN */
+
+main {
+    background-image: url(/images/main-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -800px;
+    padding: 104px 145px 0px 149px;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    width: 362px;
+    height: 552px;
+    background: #1D537C;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.card:hover {
+    background: #fff;
+    box-shadow: 0px 0px 10px 1px #137CF9;
+}
+
+.card h2 {
+    color: #fff;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card:hover h2,
+.card:hover ul {
+    color: #1D537C;
+}
+
+.card ul {
+    color: #fff;
+    line-height: 25px;
+    height: 193px;
+    padding: 10px 0px 28px 45px;
+}
+
+
+.card .computer,
+.card .android {
+    height: 210px;
+}
+
+.card button {
+    padding: 18px 100px;
+    background: linear-gradient(to right, #3AA0FF, #137CF9, #0152F9);
+    color: #fff;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* LOCATIONS, MAPS */
+
+.locations {
+    padding-top: 45px;
+}
+
+.location-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.location-title-item {
+    text-align: center;
+}
+
+.location-title .location-title-item h1 {
+    color: #1D537C;
+}
+
+.location-title-button {
+    display: flex;
+    gap: 30px;
+}
+
+.location-title-button button {
+    padding: 6px 35px;
+    border-radius: 26px;
+    background: #E5E5E5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+}
+
+.location-title-button button:active {
+    background: linear-gradient(to right, #3AA0FF, #137CF9, #0152F9);
+    color: #fff;
+}
+
+.location-maps {
+    display: flex;
+    gap: 80px;
+    padding: 108px 0px;
+}

@@ -1,0 +1,41 @@
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+nav .container ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul a {
+    color: #fff;
+    font-size: 20px;
+    transition: .5s;
+}
+
+nav ul .phone {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul .phone .fa-phone {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
