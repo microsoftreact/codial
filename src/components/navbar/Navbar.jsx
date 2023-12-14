@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [scroll, setScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setScroll(true);
+    }else{
+      setScroll(false)
+    }
+  };
+
+  // Eventni qo'shish
+  window.addEventListener("scroll", handleScroll);
   return (
-    <nav>
+    <nav className={scroll ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="navbar-logo">
           <NavLink to={"/"}>

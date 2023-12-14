@@ -1,0 +1,77 @@
+.android-hero {
+    height: 976px;
+    background-color: #1D537C;
+}
+
+.android-hero .container {
+    display: flex;
+    align-items: center;
+    padding-top: 222px;
+}
+
+.android-hero-content h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.android-hero-content p {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.android-hero-content button {
+    text-align: center;
+    margin-left: 50px;
+    padding: 18px 60px;
+    font-size: 19px;
+    font-weight: 500;
+    background: linear-gradient(to right, #3AA0FF, #137CF9, #0152F9);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.android-main {
+    background: #f5f5f5;
+}
+
+.android-applications {
+    display: flex;
+    gap: 84px;
+    padding-bottom: 89px;
+}
+
+.android-applications .android-application {
+    width: 390px;
+    height: 360px;
+    background: #1D537C;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.android-applications .android-application:hover {
+    background: #fff;
+    box-shadow: 0px 0px 10px 1px #1D537C;
+}
+
+.android-applications .android-application:hover h3 {
+    color: #1D537C;
+}
+
+.android-application h3 {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 19px;
+}

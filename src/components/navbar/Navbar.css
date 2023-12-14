@@ -3,6 +3,14 @@ nav {
     position: fixed;
 }
 
+.navbar {
+    transition: .5s;
+}
+
+.navbar.active {
+    background: #3AA0FF;
+}
+
 nav .container {
     display: flex;
     justify-content: space-between;

@@ -9,6 +9,7 @@ import Android from "./pages/android/Android";
 import Backend from "./pages/backend/Backend";
 import Designer from "./pages/designer/Designer";
 import "./App.css";
+import Registration from "./pages/registration/Registration";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/frontend" element={<Frontend />} />
           <Route path="/backend" element={<Backend />} />
           <Route path="/designer" element={<Designer />} />
+          <Route path="/registration" element={<Registration />} />
         </Routes>
         <Footer />
       </BrowserRouter>

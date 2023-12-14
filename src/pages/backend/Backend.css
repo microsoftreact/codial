@@ -1,0 +1,85 @@
+.backend-hero {
+    height: 976px;
+    background-color: #1D537C;
+}
+
+.backend-hero .container {
+    display: flex;
+    align-items: center;
+    padding-top: 222px;
+}
+
+.backend-hero-content h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.backend-hero-content p {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.backend-hero-content button {
+    text-align: center;
+    margin-left: 50px;
+    padding: 18px 60px;
+    font-size: 19px;
+    font-weight: 500;
+    background: linear-gradient(to right, #3AA0FF, #137CF9, #0152F9);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.backend-main {
+    background: #f5f5f5;
+}
+
+.backend-applications {
+    display: flex;
+    gap: 84px;
+    padding-bottom: 89px;
+}
+
+.backend-applications .backend-application {
+    width: 390px;
+    height: 360px;
+    background: #1D537C;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.backend-applications .backend-application:nth-child(3) {
+    display: flex;
+}
+
+.backend-applications .backend-application:nth-child(3) img {
+    padding-top: 50px;
+}
+
+.backend-applications .backend-application:hover {
+    background: #fff;
+    box-shadow: 0px 0px 10px 1px #1D537C;
+}
+
+.backend-applications .backend-application:hover h3 {
+    color: #1D537C;
+}
+
+.backend-application h3 {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 19px;
+}
