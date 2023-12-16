@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [scroll, setScroll] = useState(false);
@@ -8,22 +8,37 @@ function Navbar() {
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setScroll(true);
-    }else{
-      setScroll(false)
+    } else {
+      setScroll(false);
     }
   };
-
   // Eventni qo'shish
   window.addEventListener("scroll", handleScroll);
+
+  const location = useLocation();
+
+  const currentPath = location.pathname;
+  console.log(currentPath);
+
   return (
     <nav className={scroll ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="navbar-logo">
           <NavLink to={"/"}>
-            <img src="/images/codial-navbar-logo.png" alt="" />
+            {currentPath == "/registration" || currentPath == "/ourteam" ? (
+              <img src="/images/codial-navbar-logo2.png" alt="" />
+            ) : (
+              <img src="/images/codial-navbar-logo.png" alt="" />
+            )}
           </NavLink>
         </div>
-        <ul>
+        <ul
+          className={
+            currentPath == "/registration" || currentPath == "/ourteam"
+              ? "links registerLinks"
+              : "links"
+          }
+        >
           <li>
             <NavLink to={"/"}>Kurslar</NavLink>
           </li>

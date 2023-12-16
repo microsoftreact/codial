@@ -3,7 +3,7 @@
 
 .registration-hero {
     height: 170px;
-    background: orange;
+
 }
 
 .registration-hero-title {
@@ -19,11 +19,66 @@
 
 .registration-main {
     height: 736px;
-    background: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 .registration-main form {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    border: 1px solid red;
+    gap: 20px;
+    padding-top: 80px;
+}
+
+.registration-main form label {
+    font-size: 18px;
+}
+
+form .name label {
+    padding-left: 35px;
+}
+
+form .surname {
+    padding-right: 5px;
+}
+
+form .select-course {
+    padding-right: 60px;
+}
+
+form .feedback {
+    display: flex;
+}
+
+form .feedback {
+    padding-right: 250px;
+}
+
+.registration-main form input,
+.registration-main form select,
+.registration-main form textarea {
+    width: 578px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 17px;
+    border: 2px solid #D9D9D9;
+    outline: none;
+}
+
+.registration-main form textarea {
+    height: 125px;
+}
+
+form button {
+    text-align: center;
+    margin-left: 50px;
+    padding: 16px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(to right, #3AA0FF, #137CF9, #0152F9);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    color: #fff;
 }
